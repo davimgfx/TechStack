@@ -1,0 +1,105 @@
+.header {
+  width: auto;
+  height: 8.3rem;
+  border-bottom: 1px #ffffffb3 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .nav {
+  width: 128rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  font-size: 1.6rem;
+}
+
+.nav .logo {
+  width: 13rem;
+}
+
+.nav .items {
+  text-decoration: none;
+  display: flex;
+  gap: 5rem;
+}
+
+.items .item {
+  cursor: pointer;
+}
+
+.nav .mobile-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  display: none;
+}
+
+.mobile-menu .line {
+  width: 3.2rem;
+  height: 2px;
+  background-color: #ffffffb3;
+}
+
+@media only screen and (max-width: 1350px) {
+  .header .nav {
+    font-size: 1.4rem;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header .nav {
+    justify-content: space-between;
+    margin: 0 2rem;
+    position: relative;
+  }
+
+  .nav .items {
+    position: absolute;
+    top: 8.3rem;
+    right: -2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #100f1a;
+    padding: 2rem;
+  }
+
+  .nav .deactivate {
+    display: none;
+    padding: 0rem;
+  }
+
+  .nav .deactivate .item {
+    display: none;
+  }
+
+  .nav .mobile-menu {
+    display: flex;
+  }
+
+  .title h1 {
+    font-size: 4.8rem;
+  }
+
+  .login h2 {
+    font-size: 3.6rem;
+  }
+
+  .wrapper .title {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .label .input {
+    width: auto;
+  }
+
+  .form .button {
+    width: auto;
+  }
+}
