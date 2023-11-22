@@ -1,0 +1,135 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main .wrapper {
+    width: auto;
+    height: calc(100vh - 8.3rem);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .title p {
+    font-size: 2.4rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form .label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  
+  .label p {
+    font-size: 1.8rem;
+  }
+  
+  .label .input {
+    width: 396px;
+    height: 59px;
+    border-radius: 1.5rem;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.8rem;
+  }
+  
+  .form p {
+    font-size: 1.4rem;
+  }
+  
+  .form .button {
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 396px;
+    height: 45px;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s ease-in;
+    background: #00a732;
+  }
+  
+  .form .button:hover {
+    background: #02da43;
+  }
+  
+  .arrow {
+    margin-top: 4rem;
+   
+    
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999px;
+    background: #02da43;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+  }
+  
+  .arrow a{ 
+    font-size: 1.7rem;
+    color: #100F1A;
+  }
+  
+  
+  
+  @media only screen and (max-width: 1350px) {
+    .main {
+      align-items: flex-start;
+      justify-content: start;
+    }
+    .main .wrapper {
+      height: auto;
+      width: auto;
+      flex-direction: column;
+      justify-content: start;
+      gap: 3rem;
+      margin: 2rem;
+    }
+  
+    .main .image {
+      margin-top: 4rem;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .main .image {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .title h2 {
+      font-size: 4.8rem;
+    }
+  
+    .wrapper .title {
+      text-align: center;
+    }
+    .form {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .label .input {
+      width: 100%;
+    }
+  
+    .form .button {
+      padding: 1rem 3rem;
+      width: auto;
+      height: auto;
+    }
+  }
+  
