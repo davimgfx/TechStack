@@ -1,0 +1,192 @@
+.header {
+  width: auto;
+  height: 8.3rem;
+  border-bottom: 1px #ffffffb3 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .nav {
+  width: 128rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  font-size: 1.6rem;
+}
+
+.nav .logo {
+  width: 13rem;
+}
+
+.nav .items{
+  text-decoration: none;
+  display: flex;
+  gap: 5rem;
+}
+
+.items .item{
+  cursor: pointer;
+}
+
+.nav .mobile-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  display: none;
+}
+
+.mobile-menu .line {
+  width: 3.2rem;
+  height: 2px;
+  background-color: #ffffffb3;
+}
+
+.main {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .wrapper {
+  width: 128rem;
+  height: calc(100vh - 8.3rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper .title {
+}
+
+.title p {
+  font-size: 2.4rem;
+}
+
+.wrapper .login {
+  background-color: #39365a54;
+  padding: 4rem 4rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form .label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label p {
+  font-size: 1.8rem;
+}
+
+.label .input {
+  width: 396px;
+  height: 59px;
+  border-radius: 1.5rem;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.8rem;
+}
+
+.form p {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.form .button {
+  font-size: 1.8rem;
+  font-weight: 700;
+  width: 396px;
+  height: 45px;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in;
+  background: #00a732;
+}
+
+.form .button:hover {
+  background: #02da43;
+}
+
+@media only screen and (max-width: 1350px) {
+  .header .nav {
+    font-size: 1.4rem;
+    justify-content: center;
+  }
+  .main .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0 2rem;
+  }
+
+  .wrapper .title {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header .nav {
+    justify-content: space-between;
+    margin: 0 2rem;
+    position: relative;
+    
+  }
+
+  .nav .items {
+    position: absolute;
+    top: 8.3rem;
+    right: -2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #100F1A;
+    padding: 2rem;
+  }
+
+  .nav .deactivate {
+    display: none;
+    padding: 0rem;
+  }
+
+  .nav .deactivate .item{
+    display: none;
+  }
+
+  .nav .mobile-menu {
+    display: flex;
+  }
+
+  .title h1 {
+    font-size: 4.8rem;
+  }
+
+  .login h2 {
+    font-size: 3.6rem;
+  }
+
+  .wrapper .title {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .label .input {
+    width: auto;
+  }
+
+  .form .button {
+    width: auto;
+  }
+}
