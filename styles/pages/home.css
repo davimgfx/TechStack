@@ -60,6 +60,9 @@
 }
 
 .form .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.8rem;
   font-weight: 700;
   width: 396px;
