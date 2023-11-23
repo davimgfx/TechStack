@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/components/header.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/pages/app.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <img src="../assets/logo.png" alt="logo" class="logo" />
+        <div class="divUser">
+          <img src="../assets/user.png" alt="user-logo" class="user-logo" />
+          <div class="menu none">
+            <a href="../index.html">
+              <p>Sair</p>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="wrapper">
+        <div class="select">
+          <select name="select" id="select">
+            <option value="" disabled selected>Linguagem</option>
+            <option value="html" class="option">HTML</option>
+            <option value="css" class="option">CSS</option>
+            <option value="js" class="option">JavaScript</option>
+            <option value="ts" class="option">TypeScript</option>
+            <option value="csharp" class="option">C#</option>
+            <option value="kotlin" class="option">Kotlin</option>
+            <option value="java" class="option">Java</option>
+            <option value="php" class="option">PHP</option>
+            <option value="swift" class="option">Swift</option>
+            <option value="c" class="option">C</option>
+            <option value="cplusplus" class="option">C++</option>
+            <option value="dart" class="option">Dart</option>
+            <option value="python" class="option">Python</option>
+            <option value="ruby" class="option">Ruby</option>
+            <option value="golang" class="option">Golang</option>
+          </select>
+        </div>
+        <div>
+          <div class="optionsArticles">
+            <input
+              type="text"
+              class="input"
+              placeholder="Pesquise por artigos" />
+            <div class="articles">Seus artigos</div>
+            <div class="articles">Principais artigos</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../js/app/index.js"></script>
+  </body>
+</html>

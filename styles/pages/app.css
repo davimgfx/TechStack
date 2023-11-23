@@ -1,0 +1,180 @@
+.navbar {
+  width: 128rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  font-size: 1.6rem;
+}
+
+.navbar .logo {
+  width: 13rem;
+}
+
+.navbar .user-logo {
+  width: 3rem;
+  cursor: pointer;
+}
+
+.divUser {
+  position: relative;
+}
+
+.divUser .none {
+  display: none;
+  position: static;
+  width: 0;
+  height: 0;
+}
+
+.menu {
+  position: absolute;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 15rem;
+  height: 5rem;
+  background-color: #100f1a;
+  bottom: 10;
+  right: 0;
+}
+
+.main {
+  display: flex;
+}
+
+.main .wrapper {
+  margin: 0 auto;
+  width: 128rem;
+  height: calc(100vh - 8.3rem);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+/* Arrow */
+select {
+  appearance: none;
+  border: 0;
+  box-shadow: none;
+  font-size: 1.6rem;
+  /* Personalize */
+  border-radius: 10px;
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: #100f1a;
+  border: 1px solid #fff;
+  background-image: none;
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  font-size: 1.4rem;
+  display: flex;
+  width: 30em;
+  height: 3em;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.option {
+  font-size: 1.4rem;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #34495e;
+  transition: 0.25s all ease;
+  pointer-events: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.select:hover::after {
+  color: #02da43;
+}
+
+.optionsArticles {
+  display: flex;
+  gap: 2rem;
+}
+
+.optionsArticles .articles {
+  background: #02da43;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.input {
+  width: 30em;
+  height: 3em;
+  border-radius: 0.25em;
+  overflow: hidden;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 1rem 1.2rem;
+  color: white;
+}
+
+@media only screen and (max-width: 1350px) {
+  .navbar{
+    margin: 0 2rem;
+  }
+  .main {
+    align-items: center;
+    justify-content: center;
+  }
+  .main .wrapper {
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+    gap: 3rem;
+    margin: 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .optionsArticles .articles{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .select {
+    position: relative;
+    font-size: 1.4rem;
+    display: flex;
+    width: 15em;
+    height: 3em;
+    border-radius: 0.25em;
+    overflow: hidden;
+  }
+
+  .input{
+    width: 20rem;
+  }
+}
