@@ -48,6 +48,9 @@
   .form .button {
     font-size: 1.8rem;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 396px;
     height: 45px;
     border-radius: 1.5rem;
