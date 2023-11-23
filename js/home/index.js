@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebas
 
 import {
   getAuth,
-  signInWithEmailAndPassword
+  signInWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
 
 const firebaseConfig = {
@@ -25,14 +25,18 @@ const userLogin = async () => {
   const loginEmail = userEmailLogin.value;
   const loginPassword = userPasswordLogin.value;
 
-  try{
-    const userCredential = await signInWithEmailAndPassword(auth, loginEmail, loginPassword)
+  try {
+    const userCredential = await signInWithEmailAndPassword(
+      auth,
+      loginEmail,
+      loginPassword
+    );
     const user = userCredential.user;
-    console.log(user)
-    alert("Login com sucesso!")
-    window.location.href = '/pages/app.html';
-  } catch (error){
-    alert("Senha ou email incorretos!")
+    console.log(user);
+    alert("Login com sucesso!");
+    window.location.href = "https://davimgfx.github.io/TechStack/pages/app.html"
+  } catch (error) {
+    alert("Senha ou email incorretos!");
     console.error(error);
   }
 };

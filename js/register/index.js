@@ -28,7 +28,7 @@ const userRegister = async () => {
     .then((userCredential) => {
       const user = userCredential.user;
       alert("Cadastro com sucesso!");
-      window.location.href = "/pages/app.html";
+      window.location.href = "https://davimgfx.github.io/TechStack/pages/app.html"
     })
     .catch((error) => {
       console.log(error);
