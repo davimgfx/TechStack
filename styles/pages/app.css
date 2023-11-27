@@ -44,12 +44,12 @@
 
 .main {
   display: flex;
+  margin-bottom: 5rem;
 }
 
 .main .wrapper {
   margin: 0 auto;
   width: 128rem;
-  height: calc(100vh - 8.3rem);
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
@@ -113,6 +113,11 @@ select::-ms-expand {
   color: #02da43;
 }
 
+.articleSection{
+  display: flex;
+  flex-direction: column;
+}
+
 .optionsArticles {
   display: flex;
   gap: 2rem;
@@ -137,6 +142,30 @@ select::-ms-expand {
   color: white;
 }
 
+.article{
+  background: white;
+  max-width: 128rem;
+  margin: 0 auto;
+  max-height: auto;
+  padding: 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.article h2{
+    font-size: 2.4rem;
+  }
+
+.article p {
+  font-size: 1.6rem;
+  color: #34495e;
+}
+
+.none{
+  display: none;
+}
+
 @media only screen and (max-width: 1350px) {
   .navbar{
     margin: 0 2rem;
@@ -154,6 +183,10 @@ select::-ms-expand {
 
     gap: 3rem;
     margin: 2rem;
+  }
+
+  .article{
+    margin: 1rem 2rem 0;
   }
 }
 
