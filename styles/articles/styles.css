@@ -1,0 +1,67 @@
+.article {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 128rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.article h2,
+h3 {
+  text-align: center;
+}
+
+.article h3 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.article p {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.arrow {
+  position: static;
+  margin-top: 2rem;
+
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  background: #02da43;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrow a {
+  font-size: 1.7rem;
+  color: #100f1a;
+}
+
+@media only screen and (max-width: 1350px) {
+  .article {
+    width: auto;
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .article{
+    padding-top: 2rem;
+  }
+
+  .article h2 {
+    font-size: 4.8rem;
+  }
+
+  .arrow {
+    bottom: 15px;
+    right: 15px;
+    position: fixed;
+  }
+}

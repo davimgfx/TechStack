@@ -17,21 +17,21 @@ document.addEventListener("click", function (event) {
 const select = document.getElementById("select");
 
 select.addEventListener("change", function () {
-  const selectedTag = select.value.toLowerCase();
+  const selectedTags = select.value.toLowerCase().split(',').map(tag => tag.trim());
 
- const articles = document.querySelectorAll(".article");
-
+  const articles = document.querySelectorAll(".article");
 
   articles.forEach(function (article) {
-    const articleTags = article.getAttribute("data-tags").toLowerCase();
+    const articleTags = article.getAttribute("data-tags").toLowerCase().split(',').map(tag => tag.trim());
 
-    if (selectedTag === "" || articleTags === selectedTag) {
+    if (selectedTags.length === 0 || selectedTags.some(tag => articleTags.includes(tag))) {
       article.style.display = "block";
     } else {
       article.style.display = "none";
     }
   });
 });
+
 
 
 // Show just principals
