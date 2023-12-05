@@ -167,6 +167,9 @@ select::-ms-expand {
 }
 
 @media only screen and (max-width: 1350px) {
+  .main{
+    margin-bottom: 2rem;
+  }
   .navbar{
     margin: 0 2rem;
   }
@@ -190,12 +193,6 @@ select::-ms-expand {
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .optionsArticles .articles{
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 450px) {
   .select {
     position: relative;
@@ -209,5 +206,10 @@ select::-ms-expand {
 
   .input{
     width: 20rem;
+  }
+
+  .articleSection .optionsArticles {
+    display: flex;
+    flex-direction: column;
   }
 }
