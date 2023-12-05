@@ -2,7 +2,7 @@
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
+ 
   flex-direction: column;
   width: 128rem;
   margin: 0 auto;
@@ -16,11 +16,11 @@ h3 {
 
 .article h3 {
   font-size: 2.6rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .article p {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font-size: 1.3rem;
 }
 
