@@ -36,7 +36,7 @@ select.addEventListener("change", function () {
 
 // Show just principals
 document.addEventListener('DOMContentLoaded', function () {
-  const principalArticlesButton = document.querySelector('.articles');
+  const principalArticlesButton = document.querySelector('.principal-button');
 
   principalArticlesButton.addEventListener('click', function () {
 
