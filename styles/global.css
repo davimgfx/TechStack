@@ -9,6 +9,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
+
 }
 
 /* --- basic style --- */
@@ -31,6 +32,11 @@ h2{
 
 p {
   color: #ffffffb3;
+}
+
+a {
+  text-decoration: none; 
+  color: inherit; 
 }
 
 .text-gradient {
