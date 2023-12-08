@@ -129,6 +129,8 @@ select::-ms-expand {
   font-size: 1.6rem;
   border-radius: 10rem;
   cursor: pointer;
+  text-decoration: none; 
+  color: black; 
 }
 
 .input {
